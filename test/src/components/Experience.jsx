@@ -1,18 +1,19 @@
 import React from "react";
 
-function Experience({year,role,company}){
+function Experience({mydata}){
 
     return(
-        
         <>
-       <h3>Experience</h3>
-       <ul>
-        <li>{year}</li>
-        <li>{role}</li>
-        <li>{company}</li>
-       </ul>
-       <hr></hr>
-        </>
+        <h3>Experience</h3>
+        {mydata.map((listItem,listIndex) => (
+          <ul key={listIndex} style={{listStyleType:"none"}}> 
+            {Object.keys(listItem).map((item, index) => (
+              <li key={index} >✅{listItem[item]}</li> 
+            ))}
+          </ul>
+        ))}
+        <hr />
+      </>
         
     );
 }

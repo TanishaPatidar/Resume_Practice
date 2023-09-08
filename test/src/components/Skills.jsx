@@ -6,13 +6,21 @@ function Skills({skills}){
         
         <>
         <h3>Skills</h3>
+    {
+      skills.length>0&&
+      (
         <ul>
-        <li>{s1}</li>
-        <li>{s2}</li>
-        <li>{s3}</li>
+            <li>{s1}</li>
+            <li>{s2}</li>
+           <li>{s3}</li>
+           <hr />
+
         </ul>
-        <hr></hr>
-        </>
-    );
+        
+        )
+    }
+    </>
+);
+   
 }
 export default Skills;

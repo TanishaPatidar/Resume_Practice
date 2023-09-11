@@ -2,6 +2,7 @@ import React from "react";
 import "./App.css";
 import Resume from "./components/Resume"
 import Border from "./components/Border";
+import Button from "./components/Button";
 
 function App(){
   return(
@@ -10,6 +11,7 @@ function App(){
     <Border>
        <Resume/>
     </Border>
+    <Button/>
    
     </>
 
